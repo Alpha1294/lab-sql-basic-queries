@@ -34,10 +34,11 @@ SELECT title, length FROM film ORDER BY length DESC limit 10;
 SELECT * FROM actor WHERE first_name = "SCARLETT";
 -- BONUS:
 -- 7.2 Retrieve all movies that have ARMAGEDDON in their title and have a duration longer than 100 minutes.
-SELECT * FROM film WHERE title LIKE "%ARMAGEDON&" AND length > 100;
+SELECT * FROM film WHERE title LIKE '%ARMAGEDDON%' AND length>100;
 -- Hint: use LIKE operator. More information here.
 -- 7.3 Determine the number of films that include Behind the Scenes content
 SELECT COUNT(*) FROM film WHERE special_features LIKE "%Behind the scenes%";
 
-SELECT * FROM film;
+
+
 
