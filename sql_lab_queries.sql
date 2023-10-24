@@ -25,6 +25,7 @@ SELECT COUNT(DISTINCT film_id)
 FROM inventory 
 WHERE inventory_id IN (SELECT inventory_id FROM rental);
 -- 5.4 Determine the number of distinct last names of the actors in the database.
+SELECT COUNT(DISTINCT last_name) FROM actor;
 -- Retrieve the 10 longest films.
 SELECT title, length FROM film ORDER BY length DESC limit 10;
 -- Use filtering techniques in order to:
@@ -39,3 +40,4 @@ SELECT * FROM film WHERE title LIKE "%ARMAGEDON&" AND length > 100;
 SELECT COUNT(*) FROM film WHERE special_features LIKE "&Behind the scenes%";
 
 
+SELECT COUNT(DISTINCT film_id) FROM inventory;
