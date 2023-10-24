@@ -20,7 +20,7 @@ SELECT COUNT(*) FROM store;
 -- 5.2 Determine the number of employees that the company has.
 SELECT COUNT(*) FROM staff;
 -- 5.3 Determine how many films are available for rent and how many have been rented.
-SELECT * FROM film;
+SELECT COUNT(*) FROM film;
 SELECT COUNT(DISTINCT film_id) 
 FROM inventory 
 WHERE inventory_id IN (SELECT inventory_id FROM rental);
@@ -37,3 +37,5 @@ SELECT * FROM film WHERE title LIKE "%ARMAGEDON&" AND length > 100;
 -- Hint: use LIKE operator. More information here.
 -- 7.3 Determine the number of films that include Behind the Scenes content
 SELECT COUNT(*) FROM film WHERE special_features LIKE "&Behind the scenes%";
+
+
