@@ -37,7 +37,7 @@ SELECT * FROM actor WHERE first_name = "SCARLETT";
 SELECT * FROM film WHERE title LIKE "%ARMAGEDON&" AND length > 100;
 -- Hint: use LIKE operator. More information here.
 -- 7.3 Determine the number of films that include Behind the Scenes content
-SELECT COUNT(*) FROM film WHERE special_features LIKE "&Behind the scenes%";
+SELECT COUNT(*) FROM film WHERE special_features LIKE "%Behind the scenes%";
 
+SELECT * FROM film;
 
-SELECT COUNT(DISTINCT film_id) FROM inventory;
